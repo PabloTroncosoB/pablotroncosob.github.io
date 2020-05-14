@@ -3,7 +3,7 @@ import './App.css';
 import Head from './comp/head';
 import Contacto from './comp/contacto';
 import Educacion from './comp/educacion';
-import Habilidades from './comp/habilidades.jsx';
+import Habilidades from './comp/habilidades';
 import Trabajo from './comp/trabajo';
 import Certificados from './comp/certificados';
 import Container from '@material-ui/core/Container';
