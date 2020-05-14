@@ -1,5 +1,5 @@
 ﻿import React, { Component } from 'react';
-import Titulo from './titulo';
+import Titulo from './elementos/titulo';
 
 class Certificados extends Component {
     render() {

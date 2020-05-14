@@ -1,3 +1,10 @@
 .App {
-  text-align: center;
+  text-align: left;
+}
+.MuiPaper-root {
+    padding: 1em !important;
+}
+h3{
+    margin-top:0px;
+    margin-bottom:0.2em;
 }
