@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 
 class Certificados extends Component {
     cert = {
+        "Test TOEIC (vencido)": "toeic.png",
         "Desarrollador de videojuegos": "vgd.pdf",
         "English Advanced Course": "adv.pdf",
         "English Upper Intermediate Course": "intermedio.pdf",
