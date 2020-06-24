@@ -17,8 +17,7 @@ class Trabajo extends Component {
                         Mayo 2012 - actualidad.
                     </Grid>
                     <Grid item sm={9} xs={12}>
-                                
-                        Del total de 8 años que llevo trabajando en CETIUC 4 fueron de forma presencial y 4 son de forma remota,
+                        Trabajo en forma presencial y remota.
                         <br/>Mis principales labores son:
                         <ul>
                             <li>Programar y actualizar los <a href="https://cetiuc.com/apps" target="_blank" rel="noopener noreferrer">Benchmarks</a> que ofrece CETIUC</li>

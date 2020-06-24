@@ -4,15 +4,15 @@ import Grid from '@material-ui/core/Grid';
 
 class Certificados extends Component {
     cert = {
-        "Test TOEIC (vencido)": "toeic.png",
-        "Desarrollador de videojuegos": "vgd.pdf",
+        "Ingeniero Civil en Informática": "titulocivil.pdf",
+        "Ingeniero en Informática":"tituloingeniero.pdf",
+        "TOEIC": "toeic.png",
         "English Advanced Course": "adv.pdf",
         "English Upper Intermediate Course": "intermedio.pdf",
-        "Lógica de programación": "logicaProgramacion.pdf",
         "React esencial": "react.pdf",
-        "Analista de proyectos BI": "analistaProyectosBI.pdf",
-        "Ingeniero Civil en Informática": "titulocivil.pdf",
-        "Ingeniero en Informática":"tituloingeniero.pdf"
+        "Desarrollador de videojuegos": "vgd.pdf",
+        "Lógica de programación": "logicaProgramacion.pdf",
+        "Analista de proyectos BI": "analistaProyectosBI.pdf"
     }
     render() {
         return (
