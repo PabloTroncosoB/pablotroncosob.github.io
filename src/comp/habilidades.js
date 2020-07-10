@@ -32,7 +32,7 @@ class Habilidades extends Component {
                         <Grid container justify="space-evenly" spacing={2} key={"cont"+tec}>
                             <Grid item xs={4}  key={"nam" + tec}>
                             <b>{tec}:</b>
-                        </Grid>
+                            </Grid>
                             <Grid item xs={6} key={"str" + tec}>
                                 {[...Array(parseInt(this.hab[tec]))].map((ob,i) => (
                                     <StarIcon color="primary" key={tec+i} />
@@ -41,7 +41,7 @@ class Habilidades extends Component {
                                     <StarIcon color="disabled" key={tec + o + o} />
                                 ))}
                                
-                        </Grid>
+                            </Grid>
                         </Grid>
                      ))}
                 </Grid>
