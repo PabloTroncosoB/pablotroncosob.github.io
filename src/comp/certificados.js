@@ -4,8 +4,6 @@ import Grid from '@material-ui/core/Grid';
 
 class Certificados extends Component {
     cert = {
-        "Ingeniero Civil en Informática": "titulocivil.pdf",
-        "Ingeniero en Informática":"tituloingeniero.pdf",
         "TOEIC": "toeic.png",
         "English Advanced Course": "adv.pdf",
         "English Upper Intermediate Course": "intermedio.pdf",
@@ -13,6 +11,10 @@ class Certificados extends Component {
         "Desarrollador de videojuegos": "vgd.pdf",
         "Lógica de programación": "logicaProgramacion.pdf",
         "Analista de proyectos BI": "analistaProyectosBI.pdf"
+    };
+    titulos = {
+        "Ingeniero Civil en Informática": "IngCivil.pdf",
+        "Ingeniero en Informática":"Ing.pdf"
     }
     render() {
         return (
@@ -22,13 +24,23 @@ class Certificados extends Component {
                     justify="space-around"
                     alignItems="center"
                     spacing={1}>
+                    {Object.keys(this.titulos).map((letitulos) => (
+                        <Grid container justify="space-evenly" spacing={1} key={"cont" + letitulos}>
+                            <Grid item xs={10} >
+                                {letitulos}
+                            </Grid>
+                            <Grid item xs={2} >
+                                <a href={"../titulos/"+ this.titulos[letitulos]} target="_blank" rel="noopener noreferrer">ver</a>
+                            </Grid>
+                        </Grid>
+                    ))}
                     {Object.keys(this.cert).map((lecrt) => (
                         <Grid container justify="space-evenly" spacing={1} key={"cont" + lecrt}>
                             <Grid item xs={10} >
                                 {lecrt}
                             </Grid>
                             <Grid item xs={2} >
-                                <a href={"../cursos/"+ this.cert[lecrt]}>ver</a>
+                                <a href={"../cursos/"+ this.cert[lecrt]} target="_blank" rel="noopener noreferrer">ver</a>
                             </Grid>
                         </Grid>
                     ))}
