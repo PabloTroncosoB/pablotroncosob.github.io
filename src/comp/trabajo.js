@@ -14,7 +14,7 @@ class Trabajo extends Component {
                     <Grid item sm={3} xs={12}>
                         <h3>CETIUC</h3>
                         Ingeniero de desarrollo.<br />
-                        Mayo 2012 - actualidad.
+                        Mayo 2012 - Julio 2020.
                     </Grid>
                     <Grid item sm={9} xs={12}>
                         Trabajo en forma presencial y remota.

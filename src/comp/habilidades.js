@@ -5,7 +5,7 @@ import StarIcon from '@material-ui/icons/Star';
 
 class Habilidades extends Component {
     hab = {
-        "AWS": 5,
+        "AWS": 4,
         "Bootstrap":4,
         "CSS": 4,
         "GIT": 5,
@@ -13,10 +13,10 @@ class Habilidades extends Component {
         "HTML": 5,
         "Java": 3,
         "JavaScript": 4,
-        "Material UI": 4,
+        "Material UI": 3,
         "MySQL": 5,
         "PHP": 5,
-        "React": 4
+        "React": 3
     };
     idiomas = {
         "Inglés": 5,
