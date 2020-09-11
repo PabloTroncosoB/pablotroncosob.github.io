@@ -8,6 +8,7 @@ class Habilidades extends Component {
         "AWS": 4,
         "Bootstrap":4,
         "CSS": 4,
+        "Drupal": 4,
         "GIT": 5,
         "Highcharts": 4,
         "HTML": 5,
