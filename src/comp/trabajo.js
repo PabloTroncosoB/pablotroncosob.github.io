@@ -12,19 +12,32 @@ class Trabajo extends Component {
                     alignItems="stretch"
                     spacing={3}>
                     <Grid item sm={3} xs={12}>
+                        <h3>DataForge</h3>
+                        Desarrollador.<br />
+                        Octubre 2020 - Hoy.
+                    </Grid>
+                    <Grid item sm={9} xs={12}>
+                        Trabajo en forma remota.<br />
+                        Desarrollo de software en PHP (Yii2), MS SQL, MySQL.<br />
+                        Me dedico a implementar mejoras y nuevas características a sistemas de la organización.                       
+                    </Grid>
+                    <Grid item sm={3} xs={12}>
                         <h3>CETIUC</h3>
                         Ingeniero de desarrollo.<br />
                         Mayo 2012 - Julio 2020.
                     </Grid>
                     <Grid item sm={9} xs={12}>
-                        Trabajo en forma presencial y remota.
-                        <br/>Mis principales labores son:
+                        Trabajo en forma presencial y remota.<br />
+                        Fui el principal responsable de todas las plataformas y servicios que ofrece CETIUC<br />
+                        Utilicé PHP, MySQL, jQuery, Symfony, git, CSS, Highcharts, Protovis.
+                        <br/>Mis principales labores fueron:
                         <ul>
+                            <li>Responsable de plataformas, software y operatividad</li>
                             <li>Programar y actualizar los <a href="https://cetiuc.com/apps" target="_blank" rel="noopener noreferrer">Benchmarks</a> que ofrece CETIUC</li>
                             <li>Crear gráficos en protovis y higcharts, librerías para tareas a fines en jQuery.</li>
                             <li>Ingreso, transformación  y depuración de datos para los Benchmarks.</li>
                             <li>Plataforma de votación en PHP y MySQL con presentaciones de proyectos para los Clubes CIO y CPO.</li>
-                            <li>Desarrollar la página de <a href=" https://cetiuc.com" target="_blank" rel="noopener noreferrer">CETIUC</a>.</li>
+                            <li>Desarrollar la página anterior de <a href=" https://cetiuc.com" target="_blank" rel="noopener noreferrer">CETIUC</a>.</li>
                             <li>Mantener operativa  la infraestructura (aws, ecs, dominios, servidores svn y apache).</li>
                         </ul>
                     </Grid>
