@@ -12,8 +12,8 @@ class Trabajo extends Component {
                     alignItems="stretch"
                     spacing={3}>
                     <Grid item sm={3} xs={12}>
-                        <h3>DataForge</h3>
-                        Desarrollador.<br />
+                        <h3>Transparentia SpA</h3>
+                        Ingeniero de desarrollo.<br />
                         Octubre 2020 - Hoy.
                     </Grid>
                     <Grid item sm={9} xs={12}>
