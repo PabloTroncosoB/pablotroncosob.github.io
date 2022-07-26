@@ -101,7 +101,7 @@ async function fetchCall(idP,log){
     
     const i = initializePod(o,elementsContainer);
     
-    dyPodImage(o,i.info);
+    dyPodImage(o,i.info,variables.scene7);
     dyPodBrand(o,i.info);
     dyPodName(o,i.info);
     dyPodStars(o,i.info);
@@ -133,10 +133,10 @@ async function fetchCall(idP,log){
     return {a: a, pod: pod, info: info, btn: btn};
   }
   
-  function dyPodImage(o,pod){
+  function dyPodImage(o,pod,varScene7){
     const img = document.createElement('img');
     img.classList.add('dy-pod-img');
-    img.setAttribute('src',scene7Url+ o.sku+ "?"+variables.scene7);
+    img.setAttribute('src',scene7Url+ o.sku+ "?"+varScene7);
     img.setAttribute('alt',o.titulo+' '+o.marca);
     img.setAttribute('title',o.titulo+' '+o.marca);
     
