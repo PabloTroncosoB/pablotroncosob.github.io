@@ -261,7 +261,7 @@ async function fetchCall(idP,log){
   }
   
   
-  function dyPrecios(prod,log,pais){
+function dyPrecios(prod,log,pais){
     var CoM2 =false;
     var p1 = parseInt(prod.precios.normal.replaceAll('.',''));
     var p1Txt=prod.precios.normal;
@@ -308,9 +308,8 @@ async function fetchCall(idP,log){
     });
     
     
-    if(bundle){
-      p1Txt=p2Txt;
-      txtKey='bundlePrice';
+    if(bundle && prod.combo){
+      if(txtKey=='normal')txtKey='bundlePrice';
       p2Txt=bundlePrice;
     }
     if(m2Price < p2 && txtKey.slice(-2)=='m2'){
@@ -324,3 +323,4 @@ async function fetchCall(idP,log){
     if(log)console.log(txtKey,p1,p2);
     return {texto:txtKey,p1:p1Txt,p2:p2Txt}
   }
+
