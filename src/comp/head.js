@@ -4,6 +4,7 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import Link from '@material-ui/core/Link';
 
 function Head() {
+	const expYears = new Date().getFullYear()-2012;
     return (
         <div className="Head">
             
@@ -16,9 +17,8 @@ function Head() {
 				</Grid>
 			</Grid>
             
-			<h2>Ingeniero de software full stack</h2>
-            Profesional con 9 años de experiencia en desarrollo de software, apasionado por las nuevas tecnologías y lenguajes de programación.
-            <br/>Mis motivaciones son: ampliar mi perfil profesional, aprender, capacitarme, ganar experiencia, crear software robusto y escalable que marque la diferencia.
+			<h2>Senior full stack software engineer</h2>
+            Con {expYears} años de experiencia en desarrollo, me enfoco en crear software de alta calidad que genere un impacto positivo. Mi curiosidad por las nuevas tecnologías me impulsa a estar siempre actualizado y a buscar soluciones innovadoras.
         </div>
     );
 }

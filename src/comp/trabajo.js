@@ -12,14 +12,22 @@ class Trabajo extends Component {
                     alignItems="stretch"
                     spacing={3}>
                     <Grid item sm={3} xs={12}>
-                        <h3>Transparentia SpA</h3>
-                        Ingeniero de desarrollo.<br />
-                        Octubre 2020 - Hoy.
+                        <h3>Sodimac</h3>
+                        Senior software engineer<br />
+                        Junio 2022 - Hoy
                     </Grid>
                     <Grid item sm={9} xs={12}>
-                        Trabajo en forma remota.<br />
-                        Desarrollo de software en PHP (Yii2), MS SQL, MySQL.<br />
-                        Me dedico a implementar mejoras y nuevas características a sistemas de la organización.                       
+                    Trabajo remoto en el area de gerencia retail digital corp.<br/>
+                    Miembro clave del equipo de personalización corporativo en Retail Digital Corp. Dirigí el desarrollo y mantenimiento de experiencias personalizadas para cinco países de Latinoamérica. Mis responsabilidades incluyen la creación de librerías y módulos frontend utilizando JavaScript y Dynamic Yield, seguir el ciclo de vida de cada proyecto y mejorarlo utilizando a/b testing, así como la coordinación con equipos multidisciplinarios para garantizar la entrega exitosa de proyectos.
+                    </Grid>
+                    <Grid item sm={3} xs={12}>
+                        <h3>Transparentia SpA</h3>
+                        Desarrollador Full stack.<br />
+                        Octubre 2020 - Junio 2022.
+                    </Grid>
+                    <Grid item sm={9} xs={12}>
+                    Trabajo remoto<br/>
+                    Desarrollador PHP (Yii2) con sólida experiencia en bases de datos MS SQL y MySQL. Especializado en el desarrollo de soluciones personalizadas, implementando mejoras y nuevas funcionalidades en sistemas críticos para la organización.                       
                     </Grid>
                     <Grid item sm={3} xs={12}>
                         <h3>CETIUC</h3>
