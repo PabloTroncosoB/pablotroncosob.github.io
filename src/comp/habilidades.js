@@ -20,14 +20,17 @@ class Habilidades extends Component {
         "React": 3
     };
     idiomas = {
-        "Inglés": 5,
-        "Español": 5
+        "Inglés": [5,"esp"],
+        "Español": [5,"esp"],
+        "English": [5,"en"],
+        "Spanish": [5,"en"],
     }
 
     render() {
         return (
             <div className="Habilidades">
-                <Titulo texto="Habilidades" />
+                <span class="esp"><Titulo texto="Habilidades" /></span>
+                <span class="en"><Titulo texto="Skills" /></span>
                 <Grid container alignItems="flex-start" justify="space-evenly" spacing={2}>
                     {Object.keys(this.hab).map((tec) => (
                         <Grid container justify="space-evenly" spacing={2} key={"cont"+tec}>
@@ -46,21 +49,23 @@ class Habilidades extends Component {
                         </Grid>
                      ))}
                 </Grid>
-                <Titulo texto="Idiomas" />
+                <span class="esp"><Titulo texto="Idiomas" /></span>
+                <span class="en"><Titulo texto="Languajes" /></span>
                 <Grid container alignItems="flex-start" justify="space-evenly" spacing={2}>
                     {Object.keys(this.idiomas).map((lang) => (
                         <Grid container justify="space-evenly" spacing={2} key={"cont" + lang}>
                             <Grid item xs={4} key={"nam" + lang}>
-                                <b>{lang}:</b>
+                                <b class={this.idiomas[lang][1]}>{lang}:</b>
                             </Grid>
                             <Grid item xs={6} key={"str" + lang}>
-                                {[...Array(parseInt(this.idiomas[lang]))].map((ob, i) => (
-                                    <StarIcon color="primary" key={lang + i} />
-                                ))}
-                                {[...Array(parseInt(5 - this.idiomas[lang]))].map((ob, o) => (
-                                    <StarIcon color="disabled" key={lang + o + o} />
-                                ))}
-
+                                <span class={this.idiomas[lang][1]}>
+                                    {[...Array(parseInt(this.idiomas[lang][0]))].map((ob, i) => (
+                                        <StarIcon color="primary" key={lang + i} />
+                                    ))}
+                                    {[...Array(parseInt(5 - this.idiomas[lang][0]))].map((ob, o) => (
+                                        <StarIcon color="disabled" key={lang + o + o} />
+                                    ))}
+                                </span>
                             </Grid>
                         </Grid>
                     ))}

@@ -5,7 +5,12 @@ class Educacion extends Component {
     render() {
         return (
             <div className="Educacion">
-                <Titulo texto="Educación" />
+                <span class="esp">
+                    <Titulo texto="Educación" />
+                </span>
+                <span class="en">
+                    <Titulo texto="Education" />
+                </span>
                 <b>Ingeniería Civil Informática:</b> Universidad Tecnológica INACAP Temuco. Titulado
                 el año 2011.<br /><br/>
                 <b>Ingeniería en Informática:</b> Universidad Tecnológica INACAP Temuco.

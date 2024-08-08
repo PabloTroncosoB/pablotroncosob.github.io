@@ -8,3 +8,17 @@ h3{
     margin-top:0px;
     margin-bottom:0.2em;
 }
+
+
+.en{
+  display:none;
+}
+.esp{
+  display:initial;
+}
+
+.descargaCV{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}

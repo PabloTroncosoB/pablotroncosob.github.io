@@ -6,12 +6,23 @@ class Contacto extends Component {
 	render() {
 		return (
 			<div className="Contacto">
-                <Titulo texto="Contacto" />
+                <span class="esp"><Titulo texto="Información de Contacto" /></span>
+                <span class="en"><Titulo texto="Contact Information" /></span>
                 <Grid container alignItems="flex-start" justify="space-evenly" spacing={1}>
-                    <Grid item xs={12}>
-                        <b>Teléfono:</b><br/>
-                        <a href="tel:+56990627472">+56 9 9062 7472</a>
-                    </Grid>
+                    <span class="esp"style={{width: '-webkit-fill-available'}}>
+                        <Grid item xs={12}>
+                            <b>Teléfono:</b>
+                            <br/>
+                            <a href="tel:+56990627472">+56 9 9062 7472</a>
+                        </Grid>
+                    </span>
+                    <span class="en" style={{width: '-webkit-fill-available'}}>
+                        <Grid item xs={12}>
+                            <b>Phone:</b>
+                            <br/>
+                            <a href="tel:+56990627472">+56 9 9062 7472</a>
+                        </Grid>
+                    </span>
                     <Grid item xs={12}  >
                         <b>Email:</b><br />
                         <a href="mailto:pablotroncosob@gmail.com" rel="noopener noreferrer">pablotroncosob@gmail.com</a>

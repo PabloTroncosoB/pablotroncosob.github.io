@@ -5,7 +5,8 @@ import Grid from '@material-ui/core/Grid';
 class Trabajo extends Component {
     render() {
         return (
-            <div className="Trabajo">
+            <div>
+            <div className="Trabajo" class="esp">
                 <Titulo texto="Experiencia laboral" />
                 <Grid container direction="row"
                     justify="space-around"
@@ -17,8 +18,13 @@ class Trabajo extends Component {
                         Junio 2022 - Hoy
                     </Grid>
                     <Grid item sm={9} xs={12}>
-                    Trabajo remoto en el area de gerencia retail digital corp.<br/>
-                    Miembro clave del equipo de personalización corporativo en Retail Digital Corp. Dirigí el desarrollo y mantenimiento de experiencias personalizadas para cinco países de Latinoamérica. Mis responsabilidades incluyen la creación de librerías y módulos frontend utilizando JavaScript y Dynamic Yield, seguir el ciclo de vida de cada proyecto y mejorarlo utilizando a/b testing, así como la coordinación con equipos multidisciplinarios para garantizar la entrega exitosa de proyectos.
+                    Trabajo remoto.<br/>
+                    Miembro clave del equipo de personalización corporativo en Retail Digital Corp. <ul>
+                        <li>Dirijo el desarrollo y mantenimiento de experiencias personalizadas para cinco países de Latinoamérica. </li>
+                        <li>Creación de librerías y módulos frontend utilizando JavaScript y Dynamic Yield.</li>
+                        <li>Seguir el ciclo de vida de cada proyecto y mejorarlo utilizando A/B testing.</li>
+                        <li>Coordinación con equipos multidisciplinarios para garantizar la entrega exitosa de proyectos.</li>
+                        </ul>
                     </Grid>
                     <Grid item sm={3} xs={12}>
                         <h3>Transparentia SpA</h3>
@@ -26,7 +32,7 @@ class Trabajo extends Component {
                         Octubre 2020 - Junio 2022.
                     </Grid>
                     <Grid item sm={9} xs={12}>
-                    Trabajo remoto<br/>
+                    Trabajo remoto.<br/>
                     Desarrollador PHP (Yii2) con sólida experiencia en bases de datos MS SQL y MySQL. Especializado en el desarrollo de soluciones personalizadas, implementando mejoras y nuevas funcionalidades en sistemas críticos para la organización.                       
                     </Grid>
                     <Grid item sm={3} xs={12}>
@@ -46,7 +52,7 @@ class Trabajo extends Component {
                             <li>Ingreso, transformación  y depuración de datos para los Benchmarks.</li>
                             <li>Plataforma de votación en PHP y MySQL con presentaciones de proyectos para los Clubes CIO y CPO.</li>
                             <li>Desarrollar la página anterior de <a href=" https://cetiuc.com" target="_blank" rel="noopener noreferrer">CETIUC</a>.</li>
-                            <li>Mantener operativa  la infraestructura (aws, ecs, dominios, servidores svn y apache).</li>
+                            <li>Mantener operativa la infraestructura (aws, ecs, dominios, servidores svn y apache).</li>
                         </ul>
                     </Grid>
                     <Grid item sm={3} xs={12}>
@@ -75,6 +81,82 @@ class Trabajo extends Component {
                     </Grid>
                 </Grid>
         </div>
+        <div className="Trabajo" class="en">
+
+  <Titulo texto="Work Experience" />
+  <Grid container direction="row"
+         justify="space-around"
+         alignItems="stretch"
+         spacing={3}>
+    <Grid item sm={3} xs={12}>
+      <h3>Sodimac</h3>
+      Senior software engineer<br />
+      June 2022 - Present
+    </Grid>
+    <Grid item sm={9} xs={12}>
+      Remote work.<br/>
+      Key member of the corporate personalization team at Retail Digital Corp. <ul>
+        <li>Lead the development and maintenance of personalized experiences for five Latin American countries. </li>
+        <li>Creation of frontend libraries and modules using JavaScript and Dynamic Yield.</li>
+        <li>Follow the lifecycle of each project and improve it using A/B testing.</li>
+        <li>Coordination with multidisciplinary teams to ensure successful project delivery.</li>
+      </ul>
+    </Grid>
+    <Grid item sm={3} xs={12}>
+      <h3>Transparentia SpA</h3>
+      Full Stack Developer<br />
+      October 2020 - June 2022.
+    </Grid>
+    <Grid item sm={9} xs={12}>
+      Remote work.<br/>
+      PHP (Yii2) developer with solid experience in MS SQL and MySQL databases. Specialized in developing custom solutions, implementing improvements and new functionalities in critical organizational systems. 
+    </Grid>
+    <Grid item sm={3} xs={12}>
+      <h3>CETIUC</h3>
+      Development Engineer<br />
+      May 2012 - July 2020.
+    </Grid>
+    <Grid item sm={9} xs={12}>
+      On-site and remote work.<br />
+      I was the main responsible for all CETIUC platforms and services<br />
+      I used PHP, MySQL, jQuery, Symfony, git, CSS, Highcharts, Protovis.<br />
+      My main tasks were:
+      <ul>
+        <li>Responsible for platforms, software and operability</li>
+        <li>Program and update CETIUC's Benchmarks</li>
+        <li>Create graphics in Protovis and Highcharts, libraries for related tasks in jQuery.</li>
+        <li>Data entry, transformation and cleaning for Benchmarks.</li>
+        <li>Voting platform in PHP and MySQL with project presentations for CIO and CPO Clubs.</li>
+        <li>Develop the previous CETIUC website.</li>
+        <li>Maintain operational infrastructure (AWS, ECS, domains, SVN and Apache servers).</li>
+      </ul>
+    </Grid>
+    <Grid item sm={3} xs={12}>
+      <h3>IPG Sede Panguipulli</h3>
+      Teacher<br />
+      March to July 2018.
+    </Grid>
+    <Grid item sm={9} xs={12}>
+      Afternoon teacher, taught the following subjects:
+      <ul>
+        <li>Basic Computing.</li>
+        <li>Computing I.</li>
+        <li>Computer applications workshop.</li>
+      </ul>
+    </Grid>
+    <Grid item sm={3} xs={12}>
+      <h3>INGELOG</h3>
+      IT Technician<br />
+      June 7 to November 2011.
+    </Grid>
+    <Grid item sm={9} xs={12}>
+      Indigenous Development Projects TEMUCO.<br /><br />
+      In charge of development and maintenance of systems and databases related to bridge and road requests by indigenous communities.
+    </Grid>
+  </Grid>
+</div>
+</div>
+        
         );
     }
 }

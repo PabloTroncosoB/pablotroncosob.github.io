@@ -16,10 +16,15 @@ class Certificados extends Component {
         "Ingeniero Civil en Informática": "IngCivil.pdf",
         "Ingeniero en Informática":"Ing.pdf"
     }
+
+    
     render() {
+        
         return (
             <div className="Certificados">
-                <Titulo texto="Certificados" />
+        
+                <span class="esp"><Titulo texto="Certificados" /></span>
+                <span class="en"><Titulo texto="Certs" /></span>
                 <Grid container direction="row"
                     justify="space-around"
                     alignItems="center"
@@ -45,6 +50,7 @@ class Certificados extends Component {
                         </Grid>
                     ))}
                 </Grid>
+                
         </div>
         );
     }
