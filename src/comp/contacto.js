@@ -27,10 +27,6 @@ class Contacto extends Component {
                         <b>Email:</b><br />
                         <a href="mailto:pablotroncosob@gmail.com" rel="noopener noreferrer">pablotroncosob@gmail.com</a>
                     </Grid >
-                    <Grid item xs={12}  >
-                        <b>Github:</b><br />
-                        <a href="https://github.com/PabloTroncosoB" target="_blank" rel="noopener noreferrer">https://github.com/PabloTroncosoB</a>
-                    </Grid >
                     <Grid item xs={12} >
                         <b>LinkedIn:</b><br />
                         <a href="https://www.linkedin.com/in/pablo-troncoso-barrera-24807332" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/pablo-troncoso-barrera-24807332</a>

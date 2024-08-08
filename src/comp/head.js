@@ -11,7 +11,7 @@ function Head() {
 	document.querySelectorAll(".esp").forEach(e=>e.style.display="block");
 	document.querySelectorAll(".en").forEach(e=>e.style.display="none");
 	const espEng=()=>{
-		if(espEngBol==0){
+		if(espEngBol===0){
 			document.querySelectorAll(".esp").forEach(e=>e.style.display="block");
 			document.querySelectorAll(".en").forEach(e=>e.style.display="none");
 			espEngBol=1;
@@ -29,7 +29,7 @@ function Head() {
 					<h1>Pablo Troncoso</h1>
 				</Grid>
 				<Grid item xs={4} class="descargaCV">
-					<Link href="../cv/desarrollador%20Pablo%20Troncoso.pdf"><GetAppIcon color="primary" fontSize = "large" style={{verticalAlign:"middle"}} />Descargar CV</Link>
+					<Link href="../cv/desarrollador%20Pablo%20Troncoso.pdf" target="_blank" rel="noopener"><GetAppIcon color="primary" fontSize = "large" style={{verticalAlign:"middle"}} />Descargar CV</Link>
 						<FormControlLabel
 							control={<Switch size="small" onChange={espEng} />}
 							label="Eng"
