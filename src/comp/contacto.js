@@ -9,7 +9,7 @@ class Contacto extends Component {
                 <span class="esp"><Titulo texto="Información de Contacto" /></span>
                 <span class="en"><Titulo texto="Contact Information" /></span>
                 <Grid container alignItems="flex-start" justify="space-evenly" spacing={1}>
-                    <span class="esp"style={{width: '-webkit-fill-available'}}>
+                    <span class="esp"style={{width: '-webkit-fill-available',padding: "4px"}}>
                         <Grid item xs={12}>
                             <b>Teléfono:</b>
                             <br/>

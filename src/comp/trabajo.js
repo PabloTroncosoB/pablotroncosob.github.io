@@ -47,11 +47,11 @@ class Trabajo extends Component {
                         <br/>Mis principales labores fueron:
                         <ul>
                             <li>Responsable de plataformas, software y operatividad</li>
-                            <li>Programar y actualizar los <a href="https://cetiuc.com/apps" target="_blank" rel="noopener noreferrer">Benchmarks</a> que ofrece CETIUC</li>
+                            <li>Programar y actualizar los Benchmarks que ofrece CETIUC</li>
                             <li>Crear gráficos en protovis y higcharts, librerías para tareas a fines en jQuery.</li>
                             <li>Ingreso, transformación  y depuración de datos para los Benchmarks.</li>
                             <li>Plataforma de votación en PHP y MySQL con presentaciones de proyectos para los Clubes CIO y CPO.</li>
-                            <li>Desarrollar la página anterior de <a href=" https://cetiuc.com" target="_blank" rel="noopener noreferrer">CETIUC</a>.</li>
+                            <li>Desarrollar la página anterior de CETIUC.</li>
                             <li>Mantener operativa la infraestructura (aws, ecs, dominios, servidores svn y apache).</li>
                         </ul>
                     </Grid>

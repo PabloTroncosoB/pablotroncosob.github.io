@@ -50,7 +50,7 @@ class Habilidades extends Component {
                      ))}
                 </Grid>
                 <span class="esp"><Titulo texto="Idiomas" /></span>
-                <span class="en"><Titulo texto="Languajes" /></span>
+                <span class="en"><Titulo texto="Languages" /></span>
                 <Grid container alignItems="flex-start" justify="space-evenly" spacing={2}>
                     {Object.keys(this.idiomas).map((lang) => (
                         <Grid container justify="space-evenly" spacing={2} key={"cont" + lang}>
