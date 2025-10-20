@@ -20,5 +20,9 @@ h3{
 .descargaCV{
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 30px;
+}
+
+.gridBlock {
+  padding: 18px;
 }

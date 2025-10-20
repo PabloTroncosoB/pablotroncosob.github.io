@@ -1,6 +1,6 @@
 ﻿import React, { Component } from 'react';
 import Titulo from './elementos/titulo';
-import Grid from '@material-ui/core/Grid';
+import Grid from '@mui/material/Grid';
 
 class Contacto extends Component {
 	render() {
@@ -9,14 +9,14 @@ class Contacto extends Component {
                 <span class="esp"><Titulo texto="Información de Contacto" /></span>
                 <span class="en"><Titulo texto="Contact Information" /></span>
                 <Grid container alignItems="flex-start" justify="space-evenly" spacing={1}>
-                    <span class="esp"style={{width: '-webkit-fill-available',padding: "4px"}}>
+                    <span class="esp"style={{width: '-webkit-fill-available',padding: "4px 0px 0px 10px"}}>
                         <Grid item xs={12}>
                             <b>Teléfono:</b>
                             <br/>
                             <a href="tel:+56990627472">+56 9 9062 7472</a>
                         </Grid>
                     </span>
-                    <span class="en" style={{width: '-webkit-fill-available'}}>
+                    <span class="en" style={{width: '-webkit-fill-available',padding:"4px 0px 0px 10px"}}>
                         <Grid item xs={12}>
                             <b>Phone:</b>
                             <br/>

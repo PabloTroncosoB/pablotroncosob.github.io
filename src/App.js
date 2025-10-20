@@ -6,9 +6,9 @@ import Educacion from './comp/educacion';
 import Habilidades from './comp/habilidades';
 import Trabajo from './comp/trabajo';
 import Certificados from './comp/certificados';
-import Container from '@material-ui/core/Container';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
+import Container from '@mui/material/Container';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 
 class App extends Component {
     

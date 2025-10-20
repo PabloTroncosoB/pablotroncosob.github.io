@@ -1,24 +1,39 @@
-﻿import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import GetAppIcon from '@material-ui/icons/GetApp';
-import Link from '@material-ui/core/Link';
+﻿import React, { useState, useEffect } from 'react';
+import Grid from '@mui/material/Grid';
+import GetAppIcon from '@mui/icons-material/GetApp';
+import Link from '@mui/material/Link';
 import Switch from '@mui/material/Switch';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 function Head() {
 	const expYears = new Date().getFullYear()-2012;
-	var espEngBol=1;
-	document.querySelectorAll(".esp").forEach(e=>e.style.display="block");
-	document.querySelectorAll(".en").forEach(e=>e.style.display="none");
+	const [espEngBol, setEspEngBol] = useState(1);
+	
+	// Detectar parámetro de URL al cargar el componente
+	useEffect(() => {
+		const urlParams = new URLSearchParams(window.location.search);
+		const lang = urlParams.get('lang');
+		
+		if (lang === 'en') {
+			setEspEngBol(0);
+			document.querySelectorAll(".esp").forEach(e=>e.style.display="none");
+			document.querySelectorAll(".en").forEach(e=>e.style.display="block");
+		} else {
+			setEspEngBol(1);
+			document.querySelectorAll(".esp").forEach(e=>e.style.display="block");
+			document.querySelectorAll(".en").forEach(e=>e.style.display="none");
+		}
+	}, []);
+	
 	const espEng=()=>{
 		if(espEngBol===0){
 			document.querySelectorAll(".esp").forEach(e=>e.style.display="block");
 			document.querySelectorAll(".en").forEach(e=>e.style.display="none");
-			espEngBol=1;
+			setEspEngBol(1);
 		}else{
 			document.querySelectorAll(".esp").forEach(e=>e.style.display="none");
 			document.querySelectorAll(".en").forEach(e=>e.style.display="block");
-			espEngBol=0;
+			setEspEngBol(0);
 		}
 	}
     return (
@@ -29,11 +44,11 @@ function Head() {
 					<h1>Pablo Troncoso</h1>
 				</Grid>
 				<Grid item xs={4} class="descargaCV">
-					<Link href="../cv/desarrollador%20Pablo%20Troncoso.pdf" target="_blank" rel="noopener"><GetAppIcon color="primary" fontSize = "large" style={{verticalAlign:"middle"}} />Descargar CV</Link>
-						<FormControlLabel
-							control={<Switch size="small" onChange={espEng} />}
-							label="Eng"
-						/>
+					<Link href={espEngBol === 1 ? "../cv/desarrollador%20Pablo%20Troncoso.pdf" : "../cv/developer%20Pablo%20Troncoso.pdf"} target="_blank" rel="noopener"><GetAppIcon color="primary" fontSize = "large" style={{verticalAlign:"middle"}} />{espEngBol === 1 ? "Descargar CV" : "Download CV"}</Link>
+					<FormControlLabel
+						control={<Switch size="small" checked={espEngBol === 0} onChange={espEng} />}
+						label="Eng"
+					/>
 
 				</Grid>
 			</Grid>

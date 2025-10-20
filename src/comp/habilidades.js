@@ -1,7 +1,7 @@
 ﻿import React, { Component } from 'react';
 import Titulo from './elementos/titulo';
-import Grid from '@material-ui/core/Grid';
-import StarIcon from '@material-ui/icons/Star';
+import Grid from '@mui/material/Grid';
+import StarIcon from '@mui/icons-material/Star';
 
 class Habilidades extends Component {
     hab = {
@@ -13,11 +13,18 @@ class Habilidades extends Component {
         "Highcharts": 4,
         "HTML": 5,
         "Java": 3,
-        "JavaScript": 4,
+        "JavaScript": 5,
         "Material UI": 3,
         "MySQL": 5,
         "PHP": 5,
-        "React": 3
+        "React": 3,
+        "go":4,
+        "Node.js":4,
+        "Docker":3,
+        "Kubernetes":3,
+        "GitLab":5,
+        "GCP":5,
+        "PostgreSQL":5,
     };
     idiomas = {
         "Inglés": [5,"esp"],
@@ -31,6 +38,7 @@ class Habilidades extends Component {
             <div className="Habilidades">
                 <span class="esp"><Titulo texto="Habilidades" /></span>
                 <span class="en"><Titulo texto="Skills" /></span>
+                <div className="gridBlock">
                 <Grid container alignItems="flex-start" justify="space-evenly" spacing={2}>
                     {Object.keys(this.hab).map((tec) => (
                         <Grid container justify="space-evenly" spacing={2} key={"cont"+tec}>
@@ -49,8 +57,10 @@ class Habilidades extends Component {
                         </Grid>
                      ))}
                 </Grid>
+                </div>
                 <span class="esp"><Titulo texto="Idiomas" /></span>
                 <span class="en"><Titulo texto="Languages" /></span>
+                <div className="gridBlock">
                 <Grid container alignItems="flex-start" justify="space-evenly" spacing={2}>
                     {Object.keys(this.idiomas).map((lang) => (
                         <Grid container justify="space-evenly" spacing={2} key={"cont" + lang}>
@@ -69,7 +79,8 @@ class Habilidades extends Component {
                             </Grid>
                         </Grid>
                     ))}
-                </Grid>
+                </Grid> 
+                </div>
         </div>
         );
     }

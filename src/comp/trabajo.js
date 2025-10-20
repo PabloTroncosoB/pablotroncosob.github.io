@@ -1,6 +1,6 @@
 ﻿import React, { Component } from 'react';
 import Titulo from './elementos/titulo';
-import Grid from '@material-ui/core/Grid';
+import Grid from '@mui/material/Grid';
 
 class Trabajo extends Component {
     render() {
@@ -8,14 +8,28 @@ class Trabajo extends Component {
             <div>
             <div className="Trabajo" class="esp">
                 <Titulo texto="Experiencia laboral" />
+
                 <Grid container direction="row"
                     justify="space-around"
                     alignItems="stretch"
                     spacing={3}>
+                      <Grid item sm={3} xs={12}>
+                        <h3>Falabella - FTC</h3>
+                        Senior backend engineer<br />
+                        Diciembre 2024 - Hoy
+                    </Grid>
+                    <Grid item sm={9} xs={12}>
+                    Trabajo remoto.<br/>
+                    Parte del equipo de pre-sales, He desarrollado y
+                    mejorado microservicios criticos utilizando Nodejs,
+                    Go, Java, GCP, pub/sub, PosgtreSQL, CI/CD flows,
+                    pipelines, kubernetes, datadog, docker, gcp
+                    workloads.
+                    </Grid>
                     <Grid item sm={3} xs={12}>
                         <h3>Sodimac</h3>
                         Senior software engineer<br />
-                        Junio 2022 - Hoy
+                        Junio 2022 - Diciembre 2024
                     </Grid>
                     <Grid item sm={9} xs={12}>
                     Trabajo remoto.<br/>
@@ -89,9 +103,21 @@ class Trabajo extends Component {
          alignItems="stretch"
          spacing={3}>
     <Grid item sm={3} xs={12}>
+        <h3>Falabella - FTC</h3>
+        Senior backend engineer<br />
+        December 2024 - Present
+    </Grid>
+    <Grid item sm={9} xs={12}>
+      Remote work.<br/>
+      Part of the pre-sales team, I developed and improved critical microservices using Nodejs,
+      Go, Java, GCP, pub/sub, PosgtreSQL, CI/CD flows,
+      pipelines, kubernetes, datadog, docker, gcp
+      workloads.
+    </Grid>
+    <Grid item sm={3} xs={12}>
       <h3>Sodimac</h3>
       Senior software engineer<br />
-      June 2022 - Present
+      June 2022 - December 2024
     </Grid>
     <Grid item sm={9} xs={12}>
       Remote work.<br/>
